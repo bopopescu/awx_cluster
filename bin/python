@@ -1,0 +1,4 @@
+#!/bin/sh
+export PYTHONPATH="/opt/awx/embedded/lib/python2.7/site-packages:/opt/awx/embedded/lib64/python2.7/site-packages"
+export AWX_SETTINGS_FILE=/etc/awx/settings.py
+exec python2 "$@"
