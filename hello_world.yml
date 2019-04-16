@@ -1,0 +1,12 @@
+- name: ABPool stop
+  hosts: all
+  gather_facts: false
+  # strategy: free
+  any_errors_fatal: true
+  vars_files:
+    - "{{vars_file_path | default('group_vars/all.yml')}}"
+  tasks:
+    - debug:
+        msg: "{{inventory_hostname}} stops now"
+    - include_role: 
+        name: inc_test
