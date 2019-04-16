@@ -1,0 +1,3 @@
+- name: includetasks & print hostname
+  debug:
+    msg: "{{inventory_hostname}}"
