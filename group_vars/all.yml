@@ -1,0 +1,16 @@
+---
+# ansible_ssh_user: tli1
+# ansible_ssh_pass: tli1_pass
+# ansible_become_pass: tli1_pass
+not_until_qz_handles: ['anh', 'hen','lcm', 'mgt', 'mgu']
+abpool_services: ['docker', 'bootapp', 'httpd', 'wso2am', 'jboss', 'tomcat', 'jboss_httpd', 'tomcat_httpd', 'pm2', 'mule', 'coldfusion_httpd']
+rolling_services: []
+rolling_roles: ['log', 'cbc', 'hkf', 'hzk', 'kfk', 'ubs', 'usc', 'usi', 'usk', 'usl', 'uso', 'usp', 'usr', 'uss', 'ust', 'zkr', 'mqm', 'mqb']
+not_ready_roles: ['fin', 'upm', 'upp', 'upq', 'moj', 'lms', 'anb', 'and', 'anf', 'hkf', 'hzk']
+cluster_roles: ['hkf', 'hzk', 'kfk', 'zkr']
+not_in_management: ['jes','jem', 'qui', 'csd', 'act', 'mgs', 'mom', 'cbc', 'cob', 'itu', 'clm', 'iti', 'fdp', 'edb', 'edf', 'dby', 'lsp', 'pdd', 'pgt', 'ppl', 'plu', 'zpk', 'prm']
+not_in_f5_role: ['cbc', 'kfk', 'hkf', 'zkr', 'hzk', 'act', 'cep', 'csi', 'ggm', 'log', 'jfm', 'kfc', 'ntc', 'plt', 'rts', 'scb', 'slb', 'som', 'tnb', 'usb', 'ubs', 'usc', 'usi', 'usk', 'usl', 'uso', 'usp', 'usr', 'uss', 'ust', 'joo', 'jos','jot']
+depended_roles: ['apx', 'cps', 'itl']
+
+# takes too much time to change to healthy, should be maintained manually
+healing_skip_roles: ['stj']
